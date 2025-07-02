@@ -1,0 +1,15 @@
+pub fn new[T : Compare]() -> DoubleEndedPriorityQueue[T]
+pub fn from_array[T : Compare](arr : Array[T]) -> DoubleEndedPriorityQueue[T]
+pub fn push[T : Compare](self : DoubleEndedPriorityQueue[T], value : T) -> Unit
+pub fn peek_min[T : Compare](self : DoubleEndedPriorityQueue[T]) -> T?
+pub fn peek_max[T](self : DoubleEndedPriorityQueue[T]) -> T?
+pub fn pop_min[T : Compare](self : DoubleEndedPriorityQueue[T]) -> T?
+pub fn pop_max[T : Compare](self : DoubleEndedPriorityQueue[T]) -> T?
+pub fn length[T](self : DoubleEndedPriorityQueue[T]) -> Int
+pub fn is_empty[T](self : DoubleEndedPriorityQueue[T]) -> Bool
+pub fn clear[T](self : DoubleEndedPriorityQueue[T]) -> Unit
+pub fn to_array[T : Compare](self : DoubleEndedPriorityQueue[T]) -> Array[T]
+pub impl[T : Show + Compare] Show for DoubleEndedPriorityQueue[T] with output(
+  self,
+  logger
+) 
