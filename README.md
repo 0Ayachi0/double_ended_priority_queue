@@ -1,7 +1,7 @@
 
 # Double Ended Priority Queue
 
-English | 简体中文
+English | [简体中文](README_zh_CN.md)
 
 A Double-ended Priority Queue (DEPQ) implementation in MoonBit that supports efficient access to both minimum and maximum elements. This data structure allows you to peek and pop from both ends of the priority queue in logarithmic time.
 
